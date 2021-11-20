@@ -61,10 +61,10 @@
     <Folder Include="dbo\StoreProcedures" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\StoreProcedures\TipoInquilinoInsertar.sql" />
-    <Build Include="dbo\StoreProcedures\TipoInquilinoActualizar.sql" />
-    <Build Include="dbo\StoreProcedures\TipoInquilinoObtener.sql" />
-    <Build Include="dbo\StoreProcedures\TipoInquilinoEliminar.sql" />
     <Build Include="dbo\Tables\Producto.sql" />
+    <Build Include="dbo\StoreProcedures\ProductoActualizar.sql" />
+    <Build Include="dbo\StoreProcedures\ProductoEliminar.sql" />
+    <Build Include="dbo\StoreProcedures\ProductoInsertar.sql" />
+    <Build Include="dbo\StoreProcedures\ProductoObtener.sql" />
   </ItemGroup>
 </Project>
