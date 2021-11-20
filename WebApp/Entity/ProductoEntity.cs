@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class TipoInquilinoEntity    {
+    public class ProductoEntity    {
 
-        public int? Id_TipoInquilino { get; set; }
-        public string Descripcion { get; set; }
-        public Boolean Estado { get; set; }
+        public int? IdProducto { get; set; }
+        public string NombreProducto { get; set; }
+        public int PrecioProducto { get; set; }
       
     }
 }
