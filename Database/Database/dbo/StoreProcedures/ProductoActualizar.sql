@@ -1,7 +1,7 @@
-﻿CREATE PROCEDURE [dbo].[TipoInquilinoActualizar]
-    @Id_TipoInquilino int,
-	@Descripcion varchar(50),
-	@Estado BIT
+﻿CREATE PROCEDURE [dbo].[ProductoActualizar]
+    @IdProducto int,
+	@NombreProducto varchar(50),
+	@PrecioProducto int
 
 
 AS BEGIN
@@ -11,11 +11,11 @@ SET NOCOUNT ON
 
     BEGIN TRY
 	
-	UPDATE dbo.TipoInquilino SET
-	 Descripcion=@Descripcion,
-	 Estado=@Estado
+	UPDATE dbo.Producto SET
+	 NombreProducto=@NombreProducto,
+	 PrecioProducto=@PrecioProducto
 	WHERE 
-	       Id_TipoInquilino=@Id_TipoInquilino
+	       IdProducto=@IdProducto
 	
 	  COMMIT TRANSACTION TRASA
 	  SELECT 0 AS CodeError, '' AS MsgError

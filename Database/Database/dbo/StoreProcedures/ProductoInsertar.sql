@@ -1,6 +1,6 @@
-﻿CREATE PROCEDURE [dbo].[TipoInquilinoInsertar]
-	@Descripcion varchar(50),
-	@Estado BIT
+﻿CREATE PROCEDURE [dbo].[ProductoInsertar]
+	@NombreProducto varchar(50),
+	@PrecioProducto int
 AS BEGIN
 SET NOCOUNT ON
 
@@ -8,14 +8,14 @@ SET NOCOUNT ON
 
     BEGIN TRY
 	
-	INSERT INTO dbo.TipoInquilino
-	(Descripcion,
-	Estado
+	INSERT INTO dbo.Producto
+	(NombreProducto,
+	PrecioProducto
 	)
 	VALUES
 	(
-	@Descripcion,
-	@Estado
+	@NombreProducto,
+	@PrecioProducto
 	)
 
   COMMIT TRANSACTION TRASA
