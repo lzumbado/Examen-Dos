@@ -12,8 +12,7 @@ SET NOCOUNT ON
 
     BEGIN TRY
 	
-	UPDATE dbo.Orden SET
-	 IdOrden=@IdOrden,
+	UPDATE dbo.Orden SET	 
 	 IdProducto=@IdProducto,
 	 CantidadProducto=@CantidadProducto,
 	 Estado=@Estado
