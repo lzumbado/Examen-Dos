@@ -16,7 +16,7 @@ namespace WBL
         Task<OrdenEntity> GetById(OrdenEntity entity);
         Task<DBEntity> Update(OrdenEntity entity);
     }
-    class OrdenService : IOrdenService
+    public class OrdenService : IOrdenService
     {
         private readonly IDataAccess sql;
 
