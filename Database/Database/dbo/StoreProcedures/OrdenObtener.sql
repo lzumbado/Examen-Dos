@@ -8,7 +8,8 @@ AS BEGIN
      O.CantidadProducto,
      O.Estado,    
 
-     P.IdProducto
+     P.IdProducto,
+     P.NombreProducto
 
    FROM Orden O
     INNER JOIN Producto P
