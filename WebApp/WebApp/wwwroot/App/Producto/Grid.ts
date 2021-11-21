@@ -24,11 +24,4 @@
 
     $("#GridView").DataTable();
 
-
-
-
-
-
-
-
 }

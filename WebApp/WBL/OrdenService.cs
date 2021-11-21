@@ -71,7 +71,7 @@ namespace WBL
         {
             try
             {
-                var result = sql.ExecuteAsync("dbo.ContratoInsertar", new
+                var result = sql.ExecuteAsync("dbo.OrdenInsertar", new
                 {
                     entity.IdProducto,
                     entity.CantidadProducto,

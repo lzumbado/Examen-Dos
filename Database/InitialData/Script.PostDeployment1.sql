@@ -9,4 +9,4 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-:r .\ScriptConfiguration\01-TiposdeInquilinos.sql
+

@@ -16,7 +16,7 @@ namespace WebApp.Pages.Producto
         public EditModel(IProductoService productoService)
         {
             this.productoService = productoService;
-           
+
         }
 
         [BindProperty]
@@ -34,7 +34,7 @@ namespace WebApp.Pages.Producto
                 if (id.HasValue)
                 {
                     Entity = await productoService.GetById(new() { IdProducto = id });
-                }                
+                }
 
                 return Page();
             }
@@ -79,3 +79,4 @@ namespace WebApp.Pages.Producto
 
     }
 }
+
