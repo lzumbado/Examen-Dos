@@ -4,11 +4,15 @@ AS BEGIN
   SET NOCOUNT ON
 
   SELECT 
-     O.IdOrden,
-     O.IdProducto,
+     O.IdOrden,    
      O.CantidadProducto,
-     O.Estado    
-    FROM dbo.Orden O
+     O.Estado,    
+
+     P.IdProducto
+
+   FROM Orden O
+    INNER JOIN Producto P
+       ON P.IdProducto= O.IdProducto
     WHERE
     (@IdOrden IS NULL OR IdOrden=@IdOrden)
 
