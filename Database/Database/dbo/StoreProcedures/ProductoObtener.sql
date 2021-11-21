@@ -5,9 +5,9 @@ AS BEGIN
 
   SELECT 
      P.IdProducto,
-     P.NombreProdcuto,
-     P.PrecioProdcuto    
-    FROM dbo.Prodcuto P
+     P.NombreProducto,
+     P.PrecioProducto  
+    FROM dbo.Producto P
     WHERE
     (@IdProducto IS NULL OR IdProducto=@IdProducto)
 
